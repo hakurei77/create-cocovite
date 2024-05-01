@@ -22,10 +22,10 @@ const bootstrap = async () => {
         path.resolve(targetPath, ".gitignore")
     );
     console.log(`
-    项目创建成功！！
+    恭喜狗修金sama，项目创建成功！！！！！
     cd ${result.projectName}
-    npm install
-    npm run dev
+    pnpm i
+    pnpm run dev
     `)
 };
 bootstrap();
