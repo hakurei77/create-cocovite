@@ -1,0 +1,32 @@
+{
+  "name": "c-vuetsdemo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:pro": "vue-tsc && vite build --mode production",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.8",
+    "element-plus": "^2.7.2",
+    "sass": "^1.75.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "fast-glob": "^3.3.2",
+    "mock.js": "^0.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^2.0.6"
+  }
+}

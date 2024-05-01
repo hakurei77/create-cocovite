@@ -1,0 +1,29 @@
+{
+  "name": "create-cocovite",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "create-cocobin": "dist/index.js"
+  },
+  "file": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "prompts": "^2.4.2",
+    "release-it": "^17.2.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "release-it": {}
+}
