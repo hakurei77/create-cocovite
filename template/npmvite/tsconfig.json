@@ -1,0 +1,13 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "declaration": false,
+        "strict": true,
+        "rootDir": "src"
+    }
+}
