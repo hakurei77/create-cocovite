@@ -8,6 +8,6 @@ import 'virtual:svg-icons-register'
 import globalComponent from '@/components'
 import '@/styles/index.scss'
 import router from '@/router'
-
-createApp(App).use(ElementPlus,{ locale: zhCn }).use(globalComponent).use(router).mount('#app')
+import pinia from './store'
+createApp(App).use(ElementPlus,{ locale: zhCn }).use(globalComponent).use(router).use(pinia).mount('#app')
 

@@ -21,7 +21,8 @@ import { getUserInfo } from '@/api/user';
 import Herta from "@/assets/images/Herta.png"
 import HertaAct from "@/assets/images/HertaAct.png"
 import HertaAudio from "@/assets/audio/Herta.m4a"
-
+import useUserStore from '@/store/modules/user/index'
+const userStore = useUserStore()
 let audio = new Audio(HertaAudio);
 let HertaImg = ref(Herta);
 let change = ref("none");
