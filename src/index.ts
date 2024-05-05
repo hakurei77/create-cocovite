@@ -37,6 +37,7 @@ const bootstrap = async () => {
             choices: [
                 { title: chalk.cyan("cocovite"), value:"cocovite"},
                 { title: chalk.green('npmvite') , value:"npmvite"},
+                { title: chalk.blue("uivite"), value:"uivite"},
             ],
             initial: 0
         }
@@ -46,12 +47,10 @@ const bootstrap = async () => {
     //————————————————————————————————————————————————————————————————————————————————————————————————
     const targetPath = path.resolve(process.cwd(), result.projectName);
     let sourcePath:string = "";
-    if (result.projectSelect == "cocovite") {
-        sourcePath = path.resolve(__dirname, "../template/cocovite");
+    function projectSelectfn(projectName:string){
+        sourcePath = path.resolve(__dirname, `../template/${projectName}`);
     }
-    else if(result.projectSelect == "npmvite"){
-        sourcePath = path.resolve(__dirname, "../template/npmvite");
-    }
+    projectSelectfn(result.projectSelect);
     // Copy files from sourcePath to targetPath
     fs.cpSync(sourcePath, targetPath, { recursive: true });
     // Update package.json

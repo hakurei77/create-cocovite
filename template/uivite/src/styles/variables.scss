@@ -1,0 +1,22 @@
+$color:(
+    primary: #409eff,
+    error: #67c23a,
+    success: #e6a23c,
+    warning: #f56c6c,
+    info: #909399
+);
+:root{
+    //根据主题色来生成不同亮度的颜色
+    @each $val, $color in $color{
+        //生成主题颜色
+        --cocoreimu-color-#{$val}: #{$color};
+        @for $i from 1 through 4{
+            //生成亮度颜色
+            --cocoreimu-color-#{$val}-light-#{2 * $i + 1}: #{mix(#fff, $color, ((2 * $i + 1) * 10 * 1%))};
+        }
+        --cocoreimu-color-#{$val}-light-8: #{mix(#fff, $color, 80 * 1%)};
+        --cocoreimu-color-#{$val}-dark-2: #{mix(#000, $color, 20 * 1%)};
+    }
+    --cocoreimu-color-white: #fff;
+    --cocoreimu-color-black: #000;
+}
