@@ -37,7 +37,7 @@ const bootstrap = async () => {
             choices: [
                 { title: chalk.cyan("cocovite"), value:"cocovite"},
                 { title: chalk.green('npmvite') , value:"npmvite"},
-                { title: chalk.blue("uivite"), value:"uivite"},
+                { title: chalk.blue('uivite') , value:"uivite"}
             ],
             initial: 0
         }
