@@ -1,0 +1,19 @@
+//引入清除默认样式
+@import './reset.scss';
+
+//滚动条外观设置
+::-webkit-scrollbar {
+  //滚动条宽度
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  //滚动条背景颜色
+  background-color: $base-menu-background;
+}
+::-webkit-scrollbar-thumb {
+  //滚动部分的宽度和颜色
+  background-color: purple;
+  width: 10px;
+  border-radius: 10px;
+}
