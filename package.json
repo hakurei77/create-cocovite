@@ -1,6 +1,6 @@
 {
   "name": "create-cocovite",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "",
   "bin": {
     "create-cocobin": "dist/index.js"
